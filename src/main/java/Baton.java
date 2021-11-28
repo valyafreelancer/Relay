@@ -4,10 +4,7 @@ import lombok.Data;
 public class Baton {
     public static void main(String[] args) {
 
-        SportsMan sportsMan1 = new SportsMan();
-        sportsMan1.setName("Вася");
-        sportsMan1.setNumber(1);
-
+        SportsMan sportsMan1 = new SportsMan("Вася",1);
         sportsMan1.takeBaton(sportsMan1);
 
         try {
@@ -23,10 +20,7 @@ public class Baton {
         }
 
 
-        SportsMan sportsMan2 = new SportsMan();
-        sportsMan2.setName("Петя");
-        sportsMan2.setNumber(2);
-
+        SportsMan sportsMan2 = new SportsMan("Петя",2);
         sportsMan2.takeBaton(sportsMan2);
 
         try {
@@ -42,10 +36,7 @@ public class Baton {
         }
 
 
-        SportsMan sportsMan3 = new SportsMan();
-        sportsMan3.setName("Дима");
-        sportsMan3.setNumber(3);
-
+        SportsMan sportsMan3 = new SportsMan("Дима",3);
         sportsMan3.takeBaton(sportsMan3);
 
         try {

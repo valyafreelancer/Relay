@@ -1,7 +1,10 @@
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+
 import static java.lang.Math.random;
 
+@AllArgsConstructor
 @Data
 public class SportsMan {
 
@@ -9,13 +12,13 @@ public class SportsMan {
     private int number;
 
 
-    public void sportsMan(){
+    public void sportsMan() {
         System.out.println(" Спортсмен " + this.name + " под номером " + this.number);
     }
 
     public void takeBaton(SportsMan sportsMan) {
         this.sportsMan();
-        System.out.println( " берет эстафетную палочку");
+        System.out.println(" берет эстафетную палочку");
 
     }
 
@@ -23,9 +26,9 @@ public class SportsMan {
         this.sportsMan();
         int random = (int) ((random() * 100) + 1);
         if (random < 20)
-            throw new Exception( " упал");
+            throw new Exception(" упал");
         else
-            System.out.println( " бежит с эстафетной палочкой");
+            System.out.println(" бежит с эстафетной палочкой");
 
     }
 
@@ -35,7 +38,7 @@ public class SportsMan {
             throw new Exception("Рисковая передача палочки");
         else
             this.sportsMan();
-            System.out.println(" передает эстафетную палочку другому спортсмену");
+        System.out.println(" передает эстафетную палочку другому спортсмену");
 
 
     }
